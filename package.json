@@ -22,8 +22,11 @@
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
+  "homepage": "https://ace-subido.github.io/ph-inflation-calculator",
   "devDependencies": {
     "eslint-plugin-react": "^7.11.1",
     "gh-pages": "^1.2.0"
