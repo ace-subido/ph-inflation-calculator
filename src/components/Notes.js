@@ -25,6 +25,11 @@ const Notes = () => {
 
   return(
     <div className="Notes">
+      <p>
+        A calculator to see how prices in the Philippines has changed over the
+        course of time. Results are intended as a guide, not to serve as
+        calculations for official documents.
+      </p>
       <strong>Data References</strong>
       <ul>{references}</ul>
       <footer>
