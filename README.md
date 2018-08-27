@@ -10,6 +10,11 @@ Uses `create-react-app`
 2. `yarn start`
 3. It'll automatically pop-up a browser pointing to `localhost:3000`
 
+### Tests
 
+Uses jest: `yarn test`
 
+### Deploying
+
+Uses `gh-pages`: `yarn deploy`
 
