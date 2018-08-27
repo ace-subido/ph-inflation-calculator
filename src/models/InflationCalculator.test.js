@@ -10,7 +10,7 @@ describe(".calculate()", () => {
 
     calculator.calculate()
 
-    expect(calculator.indexAmount).toEqual(94646.85)
-    expect(calculator.percentageIncrease).toEqual(1792.94)
+    expect(calculator.indexAmount).toEqual(99703.34)
+    expect(calculator.percentageIncrease).toEqual(1894.07)
   })
 })

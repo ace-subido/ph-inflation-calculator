@@ -3,12 +3,18 @@ import * as InflationData from "../data/inflation.json"
 
 class InflationCalculator {
   constructor(props) {
-    this.props = _.merge(props, { baseAmount: Number(props.baseAmount) })
+    this.props = _.merge(
+      props,
+      { baseAmount: Number(props.baseAmount) },
+    )
   }
 
   calculate() {
     this.indexAmount = _.round(this.calculateIndexAmount(), 2)
-    this.percentageIncrease = _.round(-this.calculatePercentageIncrease(), 2)
+    this.percentageIncrease = _.round(
+      -this.calculatePercentageIncrease(),
+      2
+    )
   }
 
   calculateIndexAmount() {
