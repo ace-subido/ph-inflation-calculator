@@ -93,7 +93,7 @@ class Calculator extends Component {
             &nbsp;<strong>{displayCalculatedAmount}</strong>
             &nbsp;(<strong>{displayPercentageAmount}%</strong> increase)
           </div>
-          <button type="submit">Calculate</button>
+          <button className="btn" type="submit">Calculate</button>
         </form>
       </div>
     )

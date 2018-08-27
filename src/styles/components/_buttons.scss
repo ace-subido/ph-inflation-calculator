@@ -1,4 +1,4 @@
-button {
+.btn {
   border: 1px solid $primary-color;
   background-color: $primary-color;
   border-radius: $input-border-radius;
@@ -6,11 +6,9 @@ button {
   box-shadow: $input-box-shadow;
   cursor: pointer;
   display: inline-block;
-  font-weight: 500;
-  letter-spacing: 0.05rem;
-  height: $input-height;
-  line-height: 1.7rem;
-  padding: 0 1rem;
+  letter-spacing: 0.03rem;
+  line-height: 1.5rem;
+  padding: 0.4rem 1rem;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
@@ -18,5 +16,49 @@ button {
 
   &:hover {
     background-color: darken($primary-color, 2);
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &.share-btn {
+    &.fb {
+      border: 1px solid $fb-color;
+      background-color: $fb-color;
+
+      &:hover {
+        border: 1px solid darken($fb-color, 5);
+        background-color: darken($fb-color, 5);
+      }
+    }
+
+    &.twitter {
+      border: 1px solid $twitter-color;
+      background-color: $twitter-color;
+
+      &:hover {
+        border: 1px solid darken($twitter-color, 5);
+        background-color: darken($twitter-color, 5);
+      }
+    }
+  }
+}
+
+.btn-row {
+  .btn {
+    display: block;
+  }
+
+  .btn + .btn {
+    margin-top: 0.75rem;
+  }
+
+  @media (min-width: 40.0rem) {
+    .btn {
+      display: inline-block;
+    }
+
+    .btn + .btn {
+      margin-left: 1rem;
+    }
   }
 }

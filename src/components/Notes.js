@@ -1,4 +1,5 @@
-import React from "react";
+import React from "react"
+import ShareButton from "./ShareButton"
 
 const ABOUT_LINK = "https://ace-subido.github.io"
 const REFERENCES = [
@@ -32,6 +33,10 @@ const Notes = () => {
       </p>
       <strong>Data References</strong>
       <ul>{references}</ul>
+      <div className="btn-row">
+        <ShareButton icon="fb" socialNetwork="Facebook" />
+        <ShareButton icon="twitter" socialNetwork="Twitter" />
+      </div>
       <footer>
         Philippine Inflation Calculator &middot;&nbsp;
         <a href={ABOUT_LINK}>Ace Subido</a>
