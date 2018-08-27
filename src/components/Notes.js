@@ -1,7 +1,7 @@
 import React from "react"
 import ShareButton from "./ShareButton"
+import { SITE_URL, BASE_URL } from "../constants/LinkConstants"
 
-const ABOUT_LINK = "https://ace-subido.github.io"
 const REFERENCES = [
   {
     description: "1960 - 2012 - International Monetary Fund, International Financial Statistics",
@@ -34,12 +34,20 @@ const Notes = () => {
       <strong>Data References</strong>
       <ul>{references}</ul>
       <div className="btn-row">
-        <ShareButton icon="fb" socialNetwork="Facebook" />
-        <ShareButton icon="twitter" socialNetwork="Twitter" />
+        <ShareButton 
+          icon="fb"
+          link={`https://facebook.com/sharer/sharer.php?u=${SITE_URL}`}
+          socialNetwork="Facebook" 
+        />
+        <ShareButton
+          icon="twitter"
+          link={`https://twitter.com/intent/tweet?url=${SITE_URL}`}
+          socialNetwork="Twitter"
+        />
       </div>
       <footer>
         Philippine Inflation Calculator &middot;&nbsp;
-        <a href={ABOUT_LINK}>Ace Subido</a>
+        <a href={BASE_URL}>Ace Subido</a>
       </footer>
     </div>
   )
