@@ -1,0 +1,27 @@
+$base-font-family: 'Muli', system-ui,
+  /* macOS 10.11-10.12 */ -apple-system,
+  /* Windows 6+ */ Segoe UI,
+  /* Android 4+ */ Roboto,
+  /* Ubuntu 10.10+ */ Ubuntu,
+  /* Gnome 3+ */ Cantarell,
+  /* KDE Plasma 4+ */ Oxygen,
+  /* fallback */ sans-serif,
+  /* macOS emoji */ "Apple Color Emoji",
+  /* Windows emoji */ "Segoe UI Emoji",
+  /* Windows emoji */ "Segoe UI Symbol",
+  /* Linux emoji */ "Noto Color Emoji";
+
+// Colors
+$white: #FFF;
+$primary-color: #07c;
+$gray: #5f6e78;
+$dark-gray: #374047;
+$light-gray: #bec4c8;
+$lighter-gray: #dee1e3;
+$lightest-gray: #ebedee;
+$off-white: #f8f9f9;
+
+// Input/Buttons
+$input-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+$input-border-radius: .3rem;
+$input-height: 2.7rem;

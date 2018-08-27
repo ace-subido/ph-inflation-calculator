@@ -1,0 +1,62 @@
+.Calculator {
+  color: $gray;
+  margin: 4rem 0;
+  line-height: 3;
+  display: flex;
+
+  form {
+    width: 100%;
+  }
+
+  .Calculator-baseInputs,
+  .Calculator-indexInputs {
+    display: block;
+    padding: 0.5rem 0;
+    position: relative;
+  }
+
+  select {
+    margin: 0 0.5rem;
+  }
+
+  .amount-input {
+    margin: 0 1rem;
+    width: 100px;
+    position: relative;
+    display: inline-block;
+
+    input {
+      width: 100px;
+    }
+
+    .amount-input-sign {
+      position: absolute;
+      font-weight: 700;
+      color: #000;
+      left: -1rem;
+    }
+  }
+
+  strong {
+    color: #000;
+    font-weight: 700;
+  }
+
+  button {
+    display: block;
+    margin-top: 1.5rem;
+    margin-left: 0;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  @media (min-width: 40.0rem) {
+    button {
+      width: auto;
+    }
+
+    .amount-input {
+      margin-left: 1.5rem;
+    }
+  }
+}

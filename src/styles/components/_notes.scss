@@ -1,0 +1,19 @@
+.Notes {
+  color: $dark-gray;
+  font-size: 0.85rem;
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover {
+      color: darken($primary-color, 5%);
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    margin: 0.25rem 0 1rem;
+    padding-left: 1rem;
+  }
+}
