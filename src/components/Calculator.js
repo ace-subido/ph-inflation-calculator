@@ -47,7 +47,7 @@ class Calculator extends Component {
   render() {
     const yearList = InflationData.data;
     const comparisonYearList = yearList.filter((inflationPoint) => {
-      return inflationPoint.year > this.state.baseYear
+      return inflationPoint.year >= this.state.baseYear
     })
 
     let displayCalculatedAmount = accounting.formatMoney(
@@ -55,7 +55,7 @@ class Calculator extends Component {
       "₱",
     )
     let displayPercentageAmount = accounting.formatNumber(
-      this.state.percentageIncrease,
+      this.state.percentageIncrease, 2
     )
 
     return (
@@ -82,7 +82,7 @@ class Calculator extends Component {
             </div>
           </div>
           <div className="Calculator-indexInputs">
-            In
+            At the end of
             <YearSelect
               name="comparisonYear"
               defaultValue={this.state.comparisonYear}

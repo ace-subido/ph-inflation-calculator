@@ -13,7 +13,7 @@ class InflationCalculator {
     this.indexAmount = _.round(this.calculateIndexAmount(), 2)
     this.percentageIncrease = _.round(
       -this.calculatePercentageIncrease(),
-      2
+      3
     )
   }
 
@@ -34,7 +34,7 @@ class InflationCalculator {
 
   calculatePercentageIncrease() {
     let difference = this.props.baseAmount - this.indexAmount
-    return (difference / this.props.baseAmount) * 100
+    return (difference / this.props.baseAmount) * 100.0
   }
 }
 
