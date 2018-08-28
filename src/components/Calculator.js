@@ -74,7 +74,7 @@ class Calculator extends Component {
               inflationPoints={yearList}
               changeEventHandler={this.handleInputChange}
             />
-            if something is worth
+            the goods you can buy for
             <div className="amount-input">
               <span className="amount-input-sign">₱</span>
               <input
@@ -94,7 +94,7 @@ class Calculator extends Component {
               inflationPoints={comparisonYearList}
               changeEventHandler={this.handleInputChange}
             />
-            it would, roughly, be worth
+            would roughly cost you
             &nbsp;<strong>{displayCalculatedAmount}</strong>
             &nbsp;(<strong>{displayPercentageAmount}%</strong> increase)
           </div>
