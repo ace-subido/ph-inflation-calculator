@@ -41,6 +41,11 @@ class Calculator extends Component {
 
   handleInputChange(event) {
     const target = event.target
+
+    if(target.name === "baseAmount" && target.value.includes("-")) {
+      return false
+    }
+
     this.setState({ [target.name]: target.value })
   }
 
