@@ -4,7 +4,7 @@ import { SITE_URL, BASE_URL } from "../constants/LinkConstants"
 
 const REFERENCES = [
   {
-    description: "1960 - 2012 - International Monetary Fund, International Financial Statistics",
+    description: "1960 - 2011 - International Monetary Fund, International Financial Statistics",
     link: "https://www.indexmundi.com/facts/philippines/inflation",
   },
   {
