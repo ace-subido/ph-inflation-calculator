@@ -6,6 +6,7 @@ import * as InflationData from "../data/inflation.json"
 import InflationCalculator from "../models/InflationCalculator"
 
 import YearSelect from "./YearSelect"
+import CalculatorResult from "./CalculatorResult"
 
 class Calculator extends Component {
   constructor(props) {
@@ -95,8 +96,10 @@ class Calculator extends Component {
               changeEventHandler={this.handleInputChange}
             />
             would roughly cost you
-            &nbsp;<strong>{displayCalculatedAmount}</strong>
-            &nbsp;(<strong>{displayPercentageAmount}%</strong> increase)
+            <CalculatorResult
+              calculatedAmount={displayCalculatedAmount}
+              percentageAmount={displayPercentageAmount}
+            />
           </div>
           <button className="btn" type="submit">Calculate</button>
         </form>
