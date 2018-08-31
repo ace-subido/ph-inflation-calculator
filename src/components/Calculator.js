@@ -20,24 +20,6 @@ class Calculator extends Component {
     }
 
     this.handleInputChange = this.handleInputChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  handleSubmit(event) {
-    event.preventDefault()
-    let calculatorProps = _.merge(
-      { indexYear: this.state.comparisonYear },
-      _.pick(this.state, "baseAmount", "baseYear")
-    )
-
-    const inflationCalculator = new InflationCalculator(calculatorProps)
-
-    inflationCalculator.calculate()
-
-    this.setState({
-      calculatedAmount: inflationCalculator.indexAmount,
-      percentageIncrease: inflationCalculator.percentageIncrease,
-    })
   }
 
   handleInputChange(event) {
@@ -47,7 +29,26 @@ class Calculator extends Component {
       return false
     }
 
-    this.setState({ [target.name]: target.value })
+    let currentState = _.merge(
+      this.state,
+      { [target.name]: Number(target.value) }
+    )
+
+    let calculatorProps = _.merge(
+      { indexYear: currentState.comparisonYear },
+      _.pick(currentState, "baseAmount", "baseYear")
+    )
+
+    const inflationCalculator = new InflationCalculator(calculatorProps)
+
+    inflationCalculator.calculate()
+
+    this.setState(
+      _.merge(currentState, {
+        calculatedAmount: inflationCalculator.indexAmount,
+        percentageIncrease: inflationCalculator.percentageIncrease,
+      })
+    )
   }
 
   render() {
@@ -66,7 +67,7 @@ class Calculator extends Component {
 
     return (
       <div className="Calculator">
-        <form onSubmit={this.handleSubmit}>
+        <form>
           <div className="Calculator-baseInputs">
             In
             <YearSelect
@@ -101,7 +102,6 @@ class Calculator extends Component {
               percentageAmount={displayPercentageAmount}
             />
           </div>
-          <button className="btn" type="submit">Calculate</button>
         </form>
       </div>
     )
