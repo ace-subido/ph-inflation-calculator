@@ -1,0 +1,177 @@
+@import url(~sanitize.css);
+p, ul, li {
+  line-height: 1.5; }
+
+a {
+  color: #07c;
+  text-decoration: none; }
+  a:hover {
+    color: #0068b3;
+    text-decoration: underline; }
+
+html {
+  font-family: "Muli", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Oxygen, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+body {
+  font-family: "Muli", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Oxygen, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  line-height: 1.5; }
+
+.wrapper {
+  padding: 2rem; }
+  @media (min-width: 40rem) {
+    .wrapper {
+      padding: 4rem; } }
+
+#root {
+  width: 100%; }
+  @media (min-width: 40rem) {
+    #root {
+      width: 40rem; } }
+
+.Header {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0 0 2rem;
+  color: #000; }
+  .Header img {
+    margin-left: -0.3rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: block; }
+    @media (min-width: 40rem) {
+      .Header img {
+        display: inline-block;
+        margin-bottom: 0; } }
+
+footer {
+  color: #5f6e78;
+  margin-top: 1.5rem; }
+
+.btn {
+  border: 1px solid #07c;
+  background-color: #07c;
+  border-radius: 0.3rem;
+  color: #FFF;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: 0.03rem;
+  line-height: 1.5rem;
+  padding: 0.4rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: 100ms ease-in-out; }
+  .btn:hover {
+    background-color: #0071c2;
+    color: #fff;
+    text-decoration: none; }
+  .btn.share-btn.fb {
+    border: 1px solid #3B5998;
+    background-color: #3B5998; }
+    .btn.share-btn.fb:hover {
+      border: 1px solid #344e86;
+      background-color: #344e86; }
+  .btn.share-btn.twitter {
+    border: 1px solid #1DA1F2;
+    background-color: #1DA1F2; }
+    .btn.share-btn.twitter:hover {
+      border: 1px solid #0d95e8;
+      background-color: #0d95e8; }
+
+.btn-row .btn {
+  display: block; }
+
+.btn-row .btn + .btn {
+  margin-top: 0.75rem; }
+
+@media (min-width: 40rem) {
+  .btn-row .btn {
+    display: inline-block; }
+  .btn-row .btn + .btn {
+    margin-left: 1rem; } }
+
+.Calculator {
+  color: #5f6e78;
+  margin: 4rem 0;
+  line-height: 3;
+  display: flex; }
+  .Calculator form {
+    width: 100%; }
+  .Calculator .CalculatorResult {
+    display: inline-block; }
+  .Calculator .Calculator-baseInputs,
+  .Calculator .Calculator-indexInputs {
+    display: block;
+    padding: 0.5rem 0;
+    position: relative; }
+  .Calculator select {
+    margin: 0 0.5rem; }
+  .Calculator .amount-input {
+    margin: 0 1rem;
+    width: 100px;
+    position: relative;
+    display: inline-block; }
+    .Calculator .amount-input input {
+      width: 100px; }
+    .Calculator .amount-input .amount-input-sign {
+      position: absolute;
+      font-weight: 700;
+      color: #000;
+      left: -1rem; }
+  .Calculator strong {
+    color: #000;
+    font-weight: 700; }
+  .Calculator button {
+    display: block;
+    margin-top: 1.5rem;
+    margin-left: 0;
+    margin-right: auto;
+    width: 100%; }
+  @media (min-width: 40rem) {
+    .Calculator button {
+      width: auto; }
+    .Calculator .amount-input {
+      margin-left: 1.5rem; } }
+
+select, input {
+  appearance: none;
+  background-color: transparent;
+  box-shadow: none;
+  box-sizing: inherit;
+  height: 2.7rem;
+  padding: .3rem .8rem;
+  line-height: 1.5;
+  font-weight: 700; }
+
+input {
+  border: none;
+  border-bottom: 1px solid #bec4c8;
+  border-radius: 0;
+  padding: .3rem 0; }
+  input:focus, input:active {
+    outline: none; }
+
+select {
+  border-radius: 0.3rem;
+  border: 1px solid #bec4c8;
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding-right: 1.75rem;
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%);
+  background-position: calc(100% - 15px) calc(1em + 2px), calc(100% - 10px) calc(1em + 2px), calc(100% - 1.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat; }
+
+input[type='number'] {
+  -moz-appearance: textfield; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none; }
+
+.Notes {
+  color: #374047; }
+  .Notes ul {
+    margin: 0.25rem 0 1rem;
+    padding-left: 1.15rem; }
