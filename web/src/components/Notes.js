@@ -1,6 +1,5 @@
 import React from "react"
-import ShareButton from "./ShareButton"
-import { SITE_URL, BASE_URL } from "../constants/LinkConstants"
+import { BASE_URL } from "../constants/LinkConstants"
 
 const REFERENCES = [
   {
@@ -33,18 +32,6 @@ const Notes = () => {
       </p>
       <strong>Data References</strong>
       <ul>{references}</ul>
-      <div className="btn-row">
-        <ShareButton 
-          icon="fb"
-          link={`https://facebook.com/sharer/sharer.php?u=${SITE_URL}`}
-          socialNetwork="Facebook" 
-        />
-        <ShareButton
-          icon="twitter"
-          link={`https://twitter.com/intent/tweet?url=${SITE_URL}`}
-          socialNetwork="Twitter"
-        />
-      </div>
       <footer>
         Philippine Inflation Calculator &middot;&nbsp;
         <a href={BASE_URL}>Ace Subido</a>
