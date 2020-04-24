@@ -44,8 +44,19 @@ body {
         margin-bottom: 0; } }
 
 footer {
+  padding-top: 1.5rem;
+  border-top: 2px solid #f0f0f0;
   color: #5f6e78;
-  margin-top: 1.5rem; }
+  margin-top: 3rem; }
+  footer .donate {
+    margin-top: 1.5rem;
+    padding: 0.5rem 1.5rem 1.5rem;
+    background-color: #fafafa;
+    border-radius: 0.25rem; }
+    footer .donate .qr {
+      display: inline-block;
+      padding: 1rem;
+      background-color: white; }
 
 .btn {
   border: 1px solid #07c;

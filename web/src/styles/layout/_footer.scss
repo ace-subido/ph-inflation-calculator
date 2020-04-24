@@ -1,4 +1,19 @@
 footer {
+  padding-top: 1.5rem;
+  border-top: 2px solid #f0f0f0;
   color: $gray;
-  margin-top: 1.5rem;
+  margin-top: 3rem;
+
+  .donate {
+    margin-top: 1.5rem;
+    padding: 0.5rem 1.5rem 1.5rem;
+    background-color: #fafafa;
+    border-radius: 0.25rem;
+
+    .qr {
+      display: inline-block;
+      padding: 1rem;
+      background-color: white;
+    }
+  }
 }

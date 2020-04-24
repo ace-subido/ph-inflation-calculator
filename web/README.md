@@ -1,6 +1,6 @@
 # Philippine Inflation Calculator
 
-An inflation calculator for the Philippines. [1960 - 2012 Data is from International Monetary Fund, International Financial Statistics](https://www.indexmundi.com/facts/philippines/inflation). [2012 - 2019 Data is from BSP](http://www.bsp.gov.ph/statistics/spei_new/tab34_inf.htm).
+An inflation calculator for the Philippines. [1960 - 2012 Data is from International Monetary Fund, International Financial Statistics](https://www.indexmundi.com/facts/philippines/inflation). [2012 - 2020 Data is from BSP](http://www.bsp.gov.ph/statistics/spei_new/tab34_inf.htm).
 
 In an effort to learn ES6, Jest and React, a Philippine Inflation Calculator.
 
