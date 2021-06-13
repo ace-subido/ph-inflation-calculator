@@ -16,5 +16,5 @@ Uses jest: `yarn test`
 
 ### Deploying
 
-Uses `gh-pages`: `yarn deploy`
+Uses `gh-pages`: `yarn build && yarn deploy`
 
