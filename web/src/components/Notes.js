@@ -1,6 +1,5 @@
 import React from "react"
 import { BASE_URL } from "../constants/LinkConstants"
-import qr from "../assets/qr.png"
 
 const REFERENCES = [
   {
@@ -13,8 +12,6 @@ const REFERENCES = [
   }
 ]
 
-const ADDRESS = "1JaEkNVa2oRjZUSvgjf15wuM3EB7FSYSdo"
-
 const Notes = () => {
   let references = REFERENCES.map((reference) => {
     return(
@@ -25,7 +22,6 @@ const Notes = () => {
       </li>
     )
   })
-  let address = ADDRESS
 
   return(
     <div className="Notes">
@@ -39,16 +35,6 @@ const Notes = () => {
       <footer>
         Philippine Inflation Calculator &middot;&nbsp;
         <a href={BASE_URL}>Ace Subido</a>
-        <br/>
-        <div class="donate">
-          <p>
-            If this helped you in any way and want to donate, consider donating using Bitcoin (BTC)
-          </p>
-          <p> {address} </p>
-          <div class="qr">
-            <img src={qr} alt={address}/>
-          </div>
-        </div>
       </footer>
     </div>
   )
