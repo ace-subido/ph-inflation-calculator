@@ -8,7 +8,7 @@ const REFERENCES = [
   },
   {
     description: "2012 - 2020 - Bangko Sentral ng Pilipinas",
-    link: "http://www.bsp.gov.ph/statistics/spei_new/tab34_inf.htm",
+    link: "https://www.bsp.gov.ph/Statistics/Prices/tab34_inf.aspx",
   }
 ]
 
