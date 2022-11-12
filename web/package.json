@@ -28,6 +28,6 @@
   "homepage": "https://ace-subido.github.io/ph-inflation-calculator",
   "devDependencies": {
     "eslint-plugin-react": "^7.11.1",
-    "gh-pages": "^1.2.0"
+    "gh-pages": "^4.0.0"
   }
 }
