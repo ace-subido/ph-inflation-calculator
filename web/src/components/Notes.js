@@ -7,8 +7,12 @@ const REFERENCES = [
     link: "https://www.indexmundi.com/facts/philippines/inflation",
   },
   {
-    description: "2012 - 2022 - Bangko Sentral ng Pilipinas",
+    description: "2012 - 2018 - Bangko Sentral ng Pilipinas",
     link: "https://www.bsp.gov.ph/Statistics/Prices/tab34_inf.aspx",
+  },
+  {
+    description: "2019 - 2022 - Bangko Sentral ng Pilipinas",
+    link: "https://www.bsp.gov.ph/statistics/Prices/tab34_inf_2018_data.aspx",
   }
 ]
 
